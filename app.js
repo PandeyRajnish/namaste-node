@@ -1,11 +1,15 @@
 require("./abc"); // one module into another
-const calculateSum = require("./sum");
+// const obj = require("./sum");
+const { x, calculateSum } = require("./sum");
 
 var a = 10;
 
 var b = 30;
 
+// obj.calculateSum(a, b);
 calculateSum(a, b);
+// console.log(obj.x);
+console.log(x);
 
 // console.log(global);
 
