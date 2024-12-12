@@ -1,16 +1,16 @@
-var name = "Hello Node";
+require("./abc"); // one module into another
+const calculateSum = require("./sum");
 
 var a = 10;
 
 var b = 30;
 
-console.log(name);
-console.log(a + b);
+calculateSum(a, b);
 
 // console.log(global);
 
-console.log(this);  // print empty object
+// console.log(this); // print empty object
 
-console.log(globalThis); // points to global object
+// console.log(globalThis); // points to global object
 
 console.log(globalThis === global); // True
