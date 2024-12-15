@@ -17,3 +17,5 @@ calculateSum(a, b);
 calculateMultiply(a, b);
 
 console.log(globalThis === global); // True
+
+
